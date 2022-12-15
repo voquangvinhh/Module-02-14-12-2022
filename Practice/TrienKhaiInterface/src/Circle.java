@@ -1,7 +1,3 @@
-package Circle;
-
-import Shape.Shape;
-
 public class Circle extends Shape {
     private double radius = 1.0;
 
@@ -39,5 +35,10 @@ public class Circle extends Shape {
                 + getRadius()
                 + " ,which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        this.radius *= (percent / 200);
     }
 }

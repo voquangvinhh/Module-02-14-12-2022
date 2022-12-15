@@ -1,7 +1,4 @@
-package Comparator;
 
-
-import Circle.Circle;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -22,8 +19,10 @@ public class CircleComparatorTest {
         Arrays.sort(circles, circleComparator);
 
         System.out.println("After -sorted");
-        for (Circle circle : circles){{
+        for (Circle circle : circles){
             System.out.println(circle);
-        }}
+        }
+
+
     }
 }

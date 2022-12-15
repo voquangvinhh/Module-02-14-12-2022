@@ -1,9 +1,3 @@
-package ComparableCircle;
-
-import Circle.Circle;
-
-import javax.sound.midi.MidiFileFormat;
-
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
 
     public ComparableCircle(){

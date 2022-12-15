@@ -1,6 +1,4 @@
-package Shape;
-
-public class Shape {
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -34,5 +32,10 @@ public class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
+    }
+    public static void printShape(Shape[] shape){
+        for (Shape x : shape){
+            System.out.println(x.toString());
+        }
     }
 }
